@@ -1,0 +1,60 @@
+\documentclass[a4paper]{jsarticle}
+\usepackage{iapaper}
+\usepackage[dvipdfmx]{graphicx}
+\setcounter{tocdepth}{3} %subsubsectionを表示するために
+
+\begin{document}
+% 修士論文の場合は \degreethesis を使わず，下記を使う．
+% なお博士の場合は \doctorthesisにすること
+ \masterthesis
+% 卒業論文の場合は下記を使う
+% \degreethesis
+
+\title{修論のテーマ}
+\date{平成00年度}
+\advisor{串山久美子} % 指導教員名を入れる
+\IDnumber{17893528} 
+\Mauthor{宮下　恵太} % 自分の名前を入れる．修士の場合は \Mauthor{氏名} に変更する．
+\submissiondate{平成00年0月00日}
+\maketitle
+
+\pagenumbering{roman} % 要旨はRoman書体で表示
+\setcounter{page}{1} % 1から振り直す
+\jasummary{和文要旨}{}\\
+\thispagestyle{plain}
+　アイウエオ、カキクケコ。
+
+\summary{英文要旨}{} 
+\thispagestyle{plain}
+abcde, fghijk.
+
+\newpage
+
+\makemokuji %目次を自動で出力
+
+\newpage %新しいページを作る時はこの文書を使ってください
+
+\pagenumbering{arabic}  % 論文本体はArabicで表示
+\setcounter{page}{1} % ページ番号を1から振り直す
+
+\input{./introduction.tex}
+\input{./background.tex}
+\input{./implementation.tex}
+\input{./conclusion.tex}
+
+\newpage
+
+\begin{thebibliography}{999}
+
+\bibitem{参考文献}
+著者名, タイトル, 学会誌のページ数, 公開時間
+
+
+\end{thebibliography}
+
+\end{document}
+
+
+
+%\section*{論文の提出期限}
+%印刷論文原稿を3部, 1月28日（金）に大学院教務担当教員へ提出すること. 
